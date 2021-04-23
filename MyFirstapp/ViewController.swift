@@ -9,7 +9,8 @@ class ViewController: UIViewController {
   @IBOutlet weak var numberSlider: UISlider!
   @IBOutlet weak var numberLabel: UILabel!
   @IBOutlet weak var storyPromptImageView: UIImageView!
-
+  @IBOutlet weak var storyLabel: UILabel!
+    
   let storyPrompt = StoryPromptEntry()
 
   @IBAction func changeNumber(_ sender: UISlider) {
@@ -28,6 +29,8 @@ class ViewController: UIViewController {
     updateStoryPrompt()
     if storyPrompt.isValid() {
         print(storyPrompt)
+        storyLabel.numberOfLines = 10
+        storyLabel.text = "\(storyPrompt)"
     } else {
         let alert = UIAlertController(title: "Invalid Story Prompt", message: "Please fill out all of the field", preferredStyle: .alert)
         

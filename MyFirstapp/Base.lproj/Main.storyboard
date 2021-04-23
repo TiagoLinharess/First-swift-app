@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="56I-k5-omB">
-                                <rect key="frame" x="20" y="101" width="374" height="654.5"/>
+                                <rect key="frame" x="20" y="101" width="374" height="726.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UG1-cX-Lqb">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -127,6 +127,12 @@
                                             <action selector="generateStoryPrompt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xpn-y9-6Zu"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1u-u9-1vX">
+                                        <rect key="frame" x="0.0" y="676.5" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -143,6 +149,7 @@
                         <outlet property="nounTextField" destination="5GT-An-bIB" id="MLz-Vo-22C"/>
                         <outlet property="numberLabel" destination="5Nf-bh-25z" id="MFk-dQ-cuI"/>
                         <outlet property="numberSlider" destination="M7t-Dz-WZs" id="VrY-rl-u13"/>
+                        <outlet property="storyLabel" destination="o1u-u9-1vX" id="ri6-Qm-v7M"/>
                         <outlet property="storyPromptImageView" destination="wNG-tU-rxj" id="PNo-cy-B87"/>
                         <outlet property="verbTextField" destination="lfC-Xm-VCO" id="pNJ-yp-ne2"/>
                     </connections>
